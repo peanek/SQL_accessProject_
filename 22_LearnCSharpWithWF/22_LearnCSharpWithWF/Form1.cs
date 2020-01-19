@@ -19,8 +19,17 @@ namespace _22_LearnCSharpWithWF
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            DateTime date;
-            string dateFinal = DateTime.TryParse(textBox1.Text, out date) ? date.ToLongDateString() : "Cannot convert";
+            //    DateTime date;
+            //    string dateFinal = DateTime.TryParse(textBox1.Text, out date) ? date.ToLongDateString() : "Cannot convert";
+            DateTime dateee;
+            string dateFinal = DateTime.TryParse(textBox1.Text, out dateee) ? dateee.ToLongDateString() : "Cannot convert";
+            label1.Text = dateFinal;
+
+        }
+
+        private void textBox1_DoubleClick(object sender, EventArgs e)
+        {
+
         }
     }
 }
