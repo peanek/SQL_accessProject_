@@ -24,7 +24,9 @@ namespace _49_LearnCSharpWithWPF
 
         private void businessToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BizContacts.
+            BizContacts businessForm = new BizContacts();
+            businessForm.MdiParent = this;
+            businessForm.Show();
         }
     }
 }
