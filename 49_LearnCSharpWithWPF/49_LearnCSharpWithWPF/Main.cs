@@ -24,9 +24,25 @@ namespace _49_LearnCSharpWithWPF
 
         private void businessToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BizContacts businessForm = new BizContacts();
-            businessForm.MdiParent = this;
-            businessForm.Show();
+            BizContacts form = new BizContacts();
+            form.MdiParent = this;
+            form.Show();
+ 
+        }
+
+        private void cascadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.Cascade);
+        }
+
+        private void verticalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.TileVertical);
+        }
+
+        private void horizontalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.TileHorizontal);
         }
     }
 }
