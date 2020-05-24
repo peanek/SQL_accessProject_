@@ -27,7 +27,7 @@ namespace _49_LearnCSharpWithWPF
             BizContacts form = new BizContacts();
             form.MdiParent = this;
             form.Show();
- 
+
         }
 
         private void cascadeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -43,6 +43,11 @@ namespace _49_LearnCSharpWithWPF
         private void horizontalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LayoutMdi(MdiLayout.TileHorizontal);
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
